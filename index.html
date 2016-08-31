@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Калькулятор величин</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="row">
+	<div class="col-6">
+		<h1>Время</h1>
+		<div class="form">
+			<form id="source">
+				<p>Исходные единицы</p>
+				<br>
+				<input type="text" id="time-q"></input>
+				<select id="time1">
+					<option value="год">год</option>
+					<option value="неделя">неделя</option>
+					<option value="день">день</option>
+					<option value="час">час</option>
+					<option value="минута">минута</option>
+					<option value="секунда">секунда</option>
+				</select>
+			</form>
+		</div>
+		
+		<div class="form">
+			<form id="dest">
+				<p>Нужные единицы</p>
+				<br>
+				<select id="time2">
+					<option value="год">год</option>
+					<option value="неделя">неделя</option>
+					<option value="день">день</option>
+					<option value="час">час</option>
+					<option value="минута">минута</option>
+					<option value="секунда">секунда</option>
+				</select>
+			</form>
+		</div>
+
+		<div class="confirm">
+			<input type="button" value="Перевести" onclick="countTime();">
+		</div>
+
+		<div class="answer">
+			<p id="time"></p>
+		</div>
+	</div>
+
+	<div class="col-6">
+		<h1>Температура</h1>
+		<div class="form">
+			<form id="source">
+				<p>Исходные единицы</p>
+				<br>
+				<input type="text" id="temp-q"></input>
+				<select id="temp1" onchange="checkTemp()">
+					<option value="C">C</option>
+					<option value="F">F</option>
+				</select>
+			</form>
+		</div>
+		
+		<div class="form">
+			<form id="dest">
+				<p>Нужные единицы</p>
+				<br>
+				<input type="text" id="temp2" value="F" disabled="true">
+			</form>
+		</div>
+
+		<div class="confirm">
+			<input type="button" value="Перевести" onclick="countTemp();">
+		</div>
+
+		<div class="answer">
+			<p id="temp">123</p>
+		</div>
+	</div>
+</div>
+
+
+<div class="row">
+	<div class="col-6">
+		<h1>Длина</h1>
+	</div>
+
+	<div class="col-6">
+		<h1>Масса</h1>
+	</div>
+</div>
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
