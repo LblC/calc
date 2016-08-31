@@ -70,8 +70,8 @@ form > p, .answer p {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
-	padding: 10px;
+	justify-content: flex-start;
+	padding: 5px;
 }
 
 .confirm * {

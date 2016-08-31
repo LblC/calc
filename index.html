@@ -16,12 +16,12 @@
 				<br>
 				<input type="text" id="time-q"></input>
 				<select id="time1">
-					<option value="год">год</option>
-					<option value="неделя">неделя</option>
-					<option value="день">день</option>
-					<option value="час">час</option>
-					<option value="минута">минута</option>
-					<option value="секунда">секунда</option>
+					<option>год</option>
+					<option>неделя</option>
+					<option>день</option>
+					<option>час</option>
+					<option>минута</option>
+					<option selected="секунда">секунда</option>
 				</select>
 			</form>
 		</div>
@@ -31,12 +31,12 @@
 				<p>Нужные единицы</p>
 				<br>
 				<select id="time2">
-					<option value="год">год</option>
-					<option value="неделя">неделя</option>
-					<option value="день">день</option>
-					<option value="час">час</option>
-					<option value="минута">минута</option>
-					<option value="секунда">секунда</option>
+					<option>год</option>
+					<option>неделя</option>
+					<option>день</option>
+					<option>час</option>
+					<option>минута</option>
+					<option>секунда</option>
 				</select>
 			</form>
 		</div>
@@ -58,8 +58,8 @@
 				<br>
 				<input type="text" id="temp-q"></input>
 				<select id="temp1" onchange="checkTemp()">
-					<option value="C">C</option>
-					<option value="F">F</option>
+					<option>C</option>
+					<option>F</option>
 				</select>
 			</form>
 		</div>
@@ -77,7 +77,7 @@
 		</div>
 
 		<div class="answer">
-			<p id="temp">123</p>
+			<p id="temp"></p>
 		</div>
 	</div>
 </div>
@@ -86,10 +86,86 @@
 <div class="row">
 	<div class="col-6">
 		<h1>Длина</h1>
+		<div class="form">
+			<form id="source">
+				<p>Исходные единицы</p>
+				<br>
+				<input type="text" id="len-q"></input>
+				<select id="len1">
+					<option>километр</option>
+					<option>метр</option>
+					<option>ярд</option>
+					<option>фут</option>
+					<option>дюйм</option>
+					<option>сантиметр</option>
+					<option>миллиметр</option>
+				</select>
+			</form>
+		</div>
+		
+		<div class="form">
+			<form id="dest">
+				<p>Нужные единицы</p>
+				<br>
+				<select id="len2">
+					<option>километр</option>
+					<option>метр</option>
+					<option>ярд</option>
+					<option>фут</option>
+					<option>дюйм</option>
+					<option>сантиметр</option>
+					<option>миллиметр</option>
+				</select>
+			</form>
+		</div>
+
+		<div class="confirm">
+			<input type="button" value="Перевести" onclick="countLen();">
+		</div>
+
+		<div class="answer">
+			<p id="len"></p>
+		</div>
 	</div>
 
 	<div class="col-6">
 		<h1>Масса</h1>
+		<div class="form">
+			<form id="source">
+				<p>Исходные единицы</p>
+				<br>
+				<input type="text" id="w-q"></input>
+				<select id="w1">
+					<option>тонна</option>
+					<option>килограмм</option>
+					<option>фунт</option>
+					<option>унция</option>
+					<option>грамм</option>
+				</select>
+			</form>
+		</div>
+		
+		<div class="form">
+			<form id="dest">
+				<p>Нужные единицы</p>
+				<br>
+				<select id="w2">
+					<option>тонна</option>
+					<option>килограмм</option>
+					<option>фунт</option>
+					<option>унция</option>
+					<option>грамм</option>
+				</select>
+			</form>
+		</div>
+
+		<div class="confirm">
+			<input type="button" value="Перевести" onclick="countW();">
+		</div>
+
+		<div class="answer">
+			<p id="w"></p>
+		</div>
 	</div>
 </div>
 
