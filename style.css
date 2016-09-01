@@ -1,6 +1,6 @@
 * {
 	box-sizing: border-box;
-	font-family: arial, sans-serif;
+	font-family: helios, arial, sans-serif;
 }
 
 .col-1 {width: 8.33%;}
@@ -25,14 +25,9 @@
 
 [class*="col-"] {
     float: left;
-    padding: 15px;
-    border: 1px solid red;
-}
-
-.row::after {
-    content: "";
-    clear: both;
-    display: block;
+    padding: 5px;
+    border: 2px solid gray;
+    background-color: lightgrey;
 }
 
 [class*="col-"] {
@@ -41,12 +36,12 @@
 	float: left;
 }
 
+
 h1 {
 	display: block;
 	width: 100%;
 	text-align: center;
 	text-transform: uppercase;
-	/*float: left;*/
 }
 
 .form {
@@ -57,19 +52,29 @@ h1 {
 form {
 	width: 50%;
 	margin: auto;
+	/*display: -webkit-flex;*/
 	display: flex;
+	/*-webkit-flex-direction: column;*/
 	flex-direction: column;
-    justify-content: space-around;
+	/*-webkit-justify-content: center;*/
+    justify-content: center;
 }
 
-form > p, .answer p {
+p {
 	text-align: center;
+}
+
+#temp2 {
+	margin: 0px;
 }
 
 .confirm, .answer {
 	width: 100%;
+	/*display: -webkit-flex;*/
 	display: flex;
+	/*-webkit-flex-direction: column;*/
 	flex-direction: column;
+	/*-webkit-justify-content: flex-start;*/
 	justify-content: flex-start;
 	padding: 5px;
 }
@@ -79,3 +84,14 @@ form > p, .answer p {
 	margin: auto;
 }
 
+button {
+	color: white;
+	background-color: grey;
+	/*font-family: arial, sans-serif;*/
+	font-variant: small-caps;
+	font-weight: bold;
+}
+
+input, select {
+	background-color: lightgrey;
+}
